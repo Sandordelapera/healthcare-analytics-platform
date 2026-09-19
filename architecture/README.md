@@ -2,7 +2,7 @@
 
 This folder contains the architecture diagram for the Healthcare Analytics Platform.
 
-Planned architecture image:
+Architecture image:
 
 - `healthcare_analytics_architecture.png`
 
