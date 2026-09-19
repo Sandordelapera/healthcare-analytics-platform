@@ -2,7 +2,7 @@
 
 This folder contains the final screenshots of the five executive dashboards developed for the Healthcare Analytics Platform.
 
-Planned dashboard images:
+Dashboard images:
 
 - `comparative_analytics.png`
 - `revenue_distribution.png`
