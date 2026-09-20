@@ -150,7 +150,9 @@ healthcare-analytics-platform/
 ├── README.md
 │
 ├── docs/
-│   └── README.md
+│   ├── README.md
+│   ├── Healthcare_Analytics_Technical_Documentation.pdf
+│   └── Healthcare_Analytics_Executive_Portfolio_Summary.pdf
 │
 ├── sql/
 │   ├── README.md
@@ -204,6 +206,20 @@ healthcare-analytics-platform/
 
 ## Project Status
 
-The analytical platform, SQL components, Tableau workbook, architecture diagram, and executive dashboard gallery are completed.
+**Status: Completed**
 
-Final published PDF documentation will be added to the docs/ folder after the portfolio documentation review is completed.
+The Healthcare Analytics Platform portfolio project is complete.
+
+The repository includes:
+
+- Final PostgreSQL analytical SQL components
+- Centralized analytical View `vw_healthcare_master`
+- Portable Tableau packaged workbook with embedded extract
+- Five executive dashboards
+- Final dashboard screenshots
+- Solution architecture diagram
+- Dataset source and licensing documentation
+- Technical Documentation PDF
+- Executive Portfolio Summary PDF
+
+The completed repository provides the analytical implementation, supporting SQL, Tableau workbook, visual assets, architecture, and professional documentation required to review the project as a complete Business Intelligence portfolio solution.
