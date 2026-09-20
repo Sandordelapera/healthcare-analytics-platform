@@ -1,78 +1,148 @@
 # Healthcare Analytics Platform
 
-**End-to-end Healthcare Business Intelligence portfolio project using PostgreSQL, SQL, and Tableau Desktop.**
+End-to-end Healthcare Business Intelligence portfolio project using PostgreSQL, SQL, and Tableau Desktop.
 
 ## Project Overview
 
 The Healthcare Analytics Platform is an end-to-end Business Intelligence portfolio project designed to transform structured healthcare data into consistent, interactive, and decision-oriented analytical information.
 
-The solution combines PostgreSQL and SQL for relational data management and centralized analytical preparation with Tableau Desktop for analytical calculations, KPI development, visualization, dashboard design, and interactive exploration.
+The project combines PostgreSQL for centralized data management and analytical preparation with Tableau Desktop for calculations, KPIs, visualization, segmentation, and interactive dashboard development.
 
-The final analytical environment includes five executive dashboards covering Comparative Analytics, Revenue Distribution, Patient Demographics, Clinical & Medical Conditions, and Healthcare Operations.
+The final portfolio consists of five executive dashboards supported by a centralized PostgreSQL analytical View and a portable Tableau packaged workbook.
 
 ## Architecture & Technologies
 
-The platform follows a layered Business Intelligence architecture that separates data management, centralized analytical preparation, analytical logic, visualization, interaction, and presentation responsibilities.
-
-The solution is centered on the PostgreSQL database `healthcare_db` and the centralized analytical View `vw_healthcare_master`. Tableau Desktop consumes this standardized structure through `DS_vw_healthcare_master (healthcare_db)`, providing a common analytical foundation for the five executive dashboards.
-
-### Technology Stack
-
-- **PostgreSQL** — relational database environment and centralized healthcare data management
-- **SQL** — querying, analytical preparation, validation, and View development
-- **Tableau Desktop** — analytical calculations, KPIs, visualization, dashboards, filters, and interactive analysis
-
-### Analytical Flow
+The platform follows a layered analytical architecture:
 
 **Healthcare Data → PostgreSQL `healthcare_db` → `vw_healthcare_master` → Tableau Analytics → KPIs & Worksheets → Executive Dashboards**
 
+### Technology Stack
+
+- **PostgreSQL** — relational database and centralized healthcare data management
+- **SQL** — analytical preparation, validation, aggregation, and View development
+- **Tableau Desktop** — calculated fields, KPIs, Sets, Table Calculations, visualizations, dashboards, filters, and interactive analysis
+- **GitHub** — portfolio repository, documentation, SQL scripts, workbook, architecture, and dashboard presentation
+
+## Analytical Architecture
+
+The final PostgreSQL analytical architecture is centered on:
+
+- Database: `healthcare_db`
+- Centralized analytical View: `vw_healthcare_master`
+- Tableau data source: `DS_vw_healthcare_master (healthcare_db)`
+
+All five final executive dashboards use this centralized analytical foundation.
+
+Additional PostgreSQL Views created during earlier learning and development stages are retained in the repository as SQL development artifacts but are not data sources for the five final dashboards.
+
 ## Key Analytical Capabilities
 
-The Healthcare Analytics Platform demonstrates reusable analytical logic and interactive Business Intelligence capabilities across financial, demographic, clinical, comparative, and operational analysis.
+The final Tableau portfolio demonstrates:
 
-Key capabilities include:
-
-- **Calculated Fields and LOD Expressions** for reusable analytical measures and controlled calculation granularity
-- **Table Calculations** for ranking, percentages, Running Totals, and Moving Averages
-- **Sets and Parameters** for segmentation and dynamic analytical behavior
-- **Selected versus Others Analysis** for controlled comparative analysis
-- **Standardized KPI Framework** across multiple analytical domains
-- **Interactive Filters and Dashboard Filter Actions** for focused investigation
-- **Highlight Actions** for contextual relationship analysis
-- **Trend, Ranking, and Contribution Analysis** across operational and financial perspectives
+- Calculated Fields
+- Level of Detail (LOD) Expressions
+- Table Calculations
+- Tableau Sets
+- Selected vs Others segmentation
+- Ranking and contribution analysis
+- Percent of Total calculations
+- Standardized KPI development
+- Time-based trend analysis
+- Interactive filters
+- Dashboard Filter Actions
+- Highlight Actions
+- Reusable analytical worksheets
 
 ## Five Executive Dashboards
 
-The final Healthcare Analytics Platform includes five executive dashboards, each focused on a distinct analytical perspective while sharing the same centralized PostgreSQL and Tableau analytical foundation.
-
 ### Comparative Analytics Dashboard
-Supports Selected versus Others analysis to compare selected populations with the remaining dataset across revenue, patient counts, and related analytical measures.
+
+Provides Selected vs Others analysis across revenue, patient counts, percentages, average billing, and medical-condition distribution.
+
+![Comparative Analytics Dashboard](dashboards/comparative_analytics.png)
 
 ### Revenue Distribution Dashboard
-Examines revenue distribution across medical conditions using KPIs, ranking, percentage contribution, and comparative financial analysis.
+
+Analyzes total revenue, average billing, top medical conditions, revenue ranking, contribution percentages, and treemap-based financial distribution.
+
+![Revenue Distribution Dashboard](dashboards/revenue_distribution.png)
 
 ### Patient Demographics Dashboard
-Analyzes patient characteristics through age, gender, blood type, age-group composition, and insurance-provider perspectives.
+
+Provides demographic analysis across patient age, gender, blood type, age groups, and insurance providers.
+
+![Patient Demographics Dashboard](dashboards/patient_demographics.png)
 
 ### Clinical & Medical Conditions Dashboard
-Provides condition-level and clinical analysis across patient populations, medical conditions, medications, test results, and related healthcare attributes.
+
+Examines patient populations, medical conditions, medications, admission types, test results, billing activity, insurance providers, and length of stay.
+
+![Clinical & Medical Conditions Dashboard](dashboards/clinical_medical_conditions.png)
 
 ### Healthcare Operations Dashboard
-Evaluates admissions, discharges, billing activity, length of stay, admission types, insurance-provider revenue, test results, and monthly operational trends.
 
-## Technical Skills Demonstrated
+Provides operational visibility into admissions, discharges, billing trends, length of stay, admission-type patterns, insurance-provider revenue, test results, and monthly healthcare activity.
 
-- **PostgreSQL & SQL** — relational data management, querying, centralized analytical preparation, and reusable View design
-- **Tableau Desktop** — Calculated Fields, LOD Expressions, Table Calculations, Sets, Parameters, KPIs, worksheets, and dashboards
-- **Analytical Methods** — comparative analysis, segmentation, ranking, percentage contribution, Running Totals, Moving Averages, and time-based analysis
-- **Dashboard Development** — financial, demographic, clinical, comparative, and operational analytics
-- **Interactive Analytics** — filters, Dashboard Filter Actions, and Highlight Actions
-- **BI Architecture** — separation of data preparation, analytical logic, visualization, interaction, and presentation responsibilities
-- **Validation & Documentation** — analytical validation, architectural documentation, and professional portfolio presentation
+![Healthcare Operations Dashboard](dashboards/healthcare_operations.png)
 
-## Project Documentation & Repository Structure
+## Solution Architecture
 
-The repository is organized to provide both a concise portfolio view and access to the supporting technical materials developed for the Healthcare Analytics Platform.
+The architecture diagram illustrates the analytical flow from the synthetic healthcare dataset through PostgreSQL, the centralized analytical View, Tableau analytics, KPIs, worksheets, and the final executive dashboard environment.
+
+![Healthcare Analytics Platform Architecture](architecture/healthcare_analytics_architecture.png)
+
+## Tableau Portfolio Workbook
+
+The repository includes the final packaged Tableau workbook:
+
+`tableau/Healthcare_Analytics_Platform.twbx`
+
+The final workbook contains:
+
+- 5 executive dashboards
+- 44 supporting worksheets
+- 1 centralized analytical data source
+- 1 Tableau Set for comparative segmentation
+- Reusable Calculated Fields and Table Calculations
+- Interactive filters
+- Dashboard Filter Actions
+- Highlight Actions
+
+The `.twbx` includes a Tableau extract, allowing the dashboards to be opened and reviewed without requiring access to the original local PostgreSQL environment.
+
+## SQL Components
+
+The repository includes SQL definitions verified directly from the completed PostgreSQL project.
+
+### Centralized Analytical View
+
+`sql/vw_healthcare_master.sql`
+
+Contains the final PostgreSQL View used as the analytical foundation for the Tableau portfolio.
+
+### Development Views
+
+`sql/development_views.sql`
+
+Contains twelve additional PostgreSQL Views created during development and learning stages of the project.
+
+These Views demonstrate aggregation, grouping, ranking, KPI calculations, revenue analysis, and time-based SQL analysis.
+
+## Dataset
+
+The project uses the **Healthcare Dataset** created by **Prasad Patil (prasad22)** and published on Kaggle.
+
+- Dataset: Healthcare Dataset
+- Source file: `healthcare_dataset.csv`
+- Dataset type: Synthetic healthcare data
+- License: CC0: Public Domain
+- Source: https://www.kaggle.com/datasets/prasad22/healthcare-dataset
+
+The dataset contains synthetic healthcare information and does not contain real patient records.
+
+The original CSV is not distributed separately in this repository. The final Tableau packaged workbook contains the analytical extract required for portfolio review.
+
+## Repository Structure
 
 ```text
 healthcare-analytics-platform/
@@ -80,12 +150,10 @@ healthcare-analytics-platform/
 ├── README.md
 │
 ├── docs/
-│   ├── Healthcare_Analytics_Technical_Documentation.pdf
-│   └── Healthcare_Analytics_Executive_Portfolio_Summary.pdf
+│   └── README.md
 │
 ├── sql/
 │   ├── README.md
-│   ├── healthcare_db_setup.sql
 │   ├── vw_healthcare_master.sql
 │   └── development_views.sql
 │
@@ -94,6 +162,7 @@ healthcare-analytics-platform/
 │   └── Healthcare_Analytics_Platform.twbx
 │
 ├── dashboards/
+│   ├── README.md
 │   ├── comparative_analytics.png
 │   ├── revenue_distribution.png
 │   ├── patient_demographics.png
@@ -101,11 +170,40 @@ healthcare-analytics-platform/
 │   └── healthcare_operations.png
 │
 ├── architecture/
+│   ├── README.md
 │   └── healthcare_analytics_architecture.png
 │
 └── data/
-    └── README.md 
+    └── README.md
 ```
+
+## Technical Skills Demonstrated
+
+- PostgreSQL
+- SQL
+- Tableau Desktop
+- Business Intelligence
+- Healthcare Analytics
+- Data Preparation
+- Analytical View Development
+- KPI Development
+- Calculated Fields
+- LOD Expressions
+- Table Calculations
+- Tableau Sets
+- Ranking and Segmentation
+- Interactive Dashboard Development
+- Dashboard Actions
+- Data Visualization
+- Analytical Validation
+- Technical Documentation
+
 ## Portfolio Focus
 
 **Healthcare Data Analytics • Business Intelligence • Tableau Development • SQL Analytics**
+
+## Project Status
+
+The analytical platform, SQL components, Tableau workbook, architecture diagram, and executive dashboard gallery are completed.
+
+Final published PDF documentation will be added to the docs/ folder after the portfolio documentation review is completed.
