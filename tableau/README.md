@@ -2,7 +2,7 @@
 
 This folder contains the Tableau components developed for the Healthcare Analytics Platform.
 
-Planned Tableau file:
+Tableau workbook:
 
 - `Healthcare_Analytics_Platform.twbx`
 
